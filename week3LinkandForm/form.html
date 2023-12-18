@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <form action="https://example.com/" method="get">
+        <label for="username">Username : </label>
+        <input 
+        type="text" 
+        name="username" 
+        value=""
+        placeholder="Please input username"
+        size="25" //ขนาดของกล่องข้อความ
+        maxlength="20" //จำนวนตัวอักษรที่อนุญาตให้ใส่
+        />
+
+        <br />
+        <label for="username">Password : </label>
+        <input type="password" name="password" size="30" maxlength="20"/>
+        <!-- new line-->
+
+        <br />
+        <label for="email">Email : </label>
+        <input type="email" name="email" />
+
+        <br />
+        <label for="address">Address : </label>
+        <textarea name="address" cols="30" rows="5">
+            บ้านเลขที่ 24 หมู่ 5 ต.ตะแพน อ.ศรีบรรพต จ.พัทลุง 93190
+        </textarea>
+
+        <br />
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />LGBTQ+
+
+        <br />
+        <label for="Source">Source : </label>
+        <input type="checkbox" name="friends"  value="friends"/> Friends
+        <input type="checkbox" name="internet" value="internet"/> Internet
+        <input type="checkbox" name="radio" value="radio"/> radio
+
+        <br />
+        <label for="department">Department : </label>
+        <select name="dept">
+            <option value="1">IT</option>
+            <option value="2">Chemistry</option>
+            <option value="3">Engineer</option>
+            <option value="4">Environment</option>
+        </select>
+
+        <br />
+        <label for="profilepic">Upload File : </label>
+        <input type="file" name="profilepic" />
+
+        <br />
+        <input type="Submit" value="ลงทะเบียน"/>
+        <input type="reset" value="ยกเลิก"/>
+
+        <input type="date"/>
+        <input type="datetime-local"/>
+
+        <input type="hidden" value="error"/>
+        <input type="image"/>
+    </form>
+</body>
+</html>
